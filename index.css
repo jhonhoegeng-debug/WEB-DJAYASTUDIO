@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-gold: #C5A021;
+  --color-gold-light: #E5C158;
+  --color-luxury-white: #FFFFFF;
+  --color-luxury-cream: #FDFCF9;
+}
+
+@layer base {
+  body {
+    @apply bg-white text-neutral-900 font-sans antialiased;
+  }
+}
+
+.font-display {
+  font-family: "Inter", sans-serif;
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.glass-morphism {
+  background: rgba(255, 255, 255, 0.90);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.pricing-card-shadow {
+  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.04);
+}
+
+.pricing-card-highlight {
+  box-shadow: 0 30px 100px -20px rgba(197, 160, 33, 0.18);
+}
+
+.luxury-gradient-text {
+  background: linear-gradient(135deg, #000000 0%, #C5A021 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
